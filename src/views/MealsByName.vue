@@ -14,7 +14,9 @@
                 <h3 class="font-bold">{{ meal.strMeal }}</h3>
                 <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium dolore eaque</p>
                 <div class="flex items-center justify-between">
-                    <a :href="meal.strYoutube" target="_blank" class="px-3 py-2 rounded border-2 text-white border-red-600 bg-red-500 hover:bg-red-600 hover:text-white transition-colors">YouTube</a>
+                    <YouTubeButton :href="meal.strYoutube">
+                        YouTube
+                    </YouTubeButton>
                 </div>
             </div>
         </div>
@@ -25,6 +27,7 @@
 import { onMounted, computed, ref } from 'vue'
 import {useRoute} from 'vue-router'
 import store from '../store'
+import YouTubeButton from '../components/YouTubeButton.vue';
 
 const route = useRoute();
 
