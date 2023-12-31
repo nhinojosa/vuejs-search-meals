@@ -1,10 +1,8 @@
 <template>
-
-        <navbar />
-        <main>
-            <router-view />
-        </main>
-
+    <navbar />
+    <main>
+        <router-view />
+    </main>
 </template>
 
 <script setup>

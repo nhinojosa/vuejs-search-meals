@@ -14,32 +14,32 @@ const routes = [
         component: Defaultlayout,
         children: [
             {
-                path: '/',
+                path: '/vuejs-search-meals/',
                 name: 'home',
                 component: Home
             },
             {
-                path: '/by-name/:name?',
+                path: '/vuejs-search-meals/by-name/:name?',
                 name: 'byName',
                 component: MealsByName
             },
             {
-                path: '/by-letter/:letter?',
+                path: '/vuejs-search-meals/by-letter/:letter?',
                 name: 'byLetter',
                 component: MealsByLetter
             },
             {
-                path: '/ingredients',
+                path: '/vuejs-search-meals/ingredients',
                 name: 'ingredients',
                 component: Ingredients
             },
             {
-                path: '/by-ingredient/:ingredient',
+                path: '/vuejs-search-meals/by-ingredient/:ingredient',
                 name: 'byIngredient',
                 component: MealsByIngredient
             },
             {
-                path: '/meal/:id',
+                path: '/vuejs-search-meals/meal/:id',
                 name: 'mealDetails',
                 component: MealDetails
 
